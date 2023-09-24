@@ -35,34 +35,45 @@
   </head>
   <body>
 
-  <div class="uk-container">
-    <nav class="uk-navbar-container" uk-navbar uk-sticky>
+    <div class="uk-container">
+      <nav class="uk-navbar-container" uk-navbar uk-sticky>
 
-    <div class="uk-navbar-left uk-margin-large-left">
-      <div class="uk-light">
-      <a class="uk-logo" href="./index.html">
-        <!-- <img src="images/logo_iga.png" width="300" height="50" alt=""> -->
-        <img class="uk-logo-inverse" src="images/logo_iga.png" width="250" height="" alt="">
-      </a>
+      <div class="uk-navbar-left uk-margin-large-left">
+        <div class="uk-light uk-responsive-width">
+        <a class="uk-logo uk-responsive-width" href="./index.html">
+            <!-- <img src="images/logo_iga.png" width="300" height="50" alt=""> -->
+            <img class="uk-logo-inverse uk-responsive-width" src="images/logo_iga.png" width="250" height="" alt="">
+        </a>
+        </div>
+        <!-- <span class="uk-label uk-text-large"><a class="uk-link-reset" href="./index.html">Институт геномного анализа</a></span> -->
+          <ul class="uk-navbar-nav">
+
+          </ul>
+
       </div>
-      <!-- <span class="uk-label uk-text-large"><a class="uk-link-reset" href="./index.html">Институт геномного анализа</a></span> -->
-        <ul class="uk-navbar-nav">
-            <!-- <li class="uk-active"><a href="https://zenomeplatform.github.io">Институт геномного анализа</a></li> -->
-        </ul>
 
-    </div>
+      <div class="uk-navbar-right uk-margin-large-right">
 
-    <div class="uk-navbar-right uk-margin-large-right">
+          <ul class="uk-navbar-nav uk-visible@s">
+              <li class="uk-active uk-text-large"><a href="./genomic_services.html">Услуги</a></li>
+              <li class="uk-active uk-text-large"><a href="./products.html">Продукты</a></li>
+              <li class="uk-active uk-text-large"><a href="./order.html">Заказать исследование</a></li>
+          </ul>
+          <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+      </div>
 
-      <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="./genomic_services.html">Услуги</a></li>
-          <li class="uk-active"><a href="./products.html">Продукты</a></li>
-          <li class="uk-active"><a href="./order.html">Заказать исследование</a></li>
-      </ul>
+      </nav>
+      <div id="sidenav" uk-offcanvas="flip: true; overlay: true; esc-close: true; bg-close: true" class="uk-offcanvas">
+          <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-active uk-text-medium"><a href="./index.html">Домой</a></li>
+                <li class="uk-active uk-text-medium"><a href="./genomic_services.html">Услуги</a></li>
+                <li class="uk-active uk-text-medium"><a href="./products.html">Продукты</a></li>
+                <li class="uk-active uk-text-medium"><a href="./order.html">Заказать исследование</a></li>
+              </ul>
 
-    </div>
-
-    </nav>
+          </div>
+      </div>
 
     <ul class="uk-subnav uk-subnav-pill">
       <li class=""><a href="./genomic_services.html">Геномика</a></li>
